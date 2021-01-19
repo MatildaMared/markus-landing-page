@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap");
+/* Main colors */
+/* Fonts */
+/* Font Sizes */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* HEADER STYLES */
+.top-header {
+  height: auto;
+  background-color: #40575C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0rem 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .top-header {
+    flex-direction: row;
+  }
+}
+
+.top-header .top-tag {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #b1c5c0;
+}
+
+.top-header .company-name {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #b1c5c0;
+}
+
+/* FOOTER STYLES */
+.footer-bottom {
+  background-color: #40575C;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #b1c5c0;
+}
+
+.social-media-links {
+  padding: 1rem;
+}
+
+.social-media-links a {
+  font-size: 1.3rem;
+  padding: 1rem .5rem;
+  color: #b1c5c0;
+}
+
+.social-media-links a:hover {
+  opacity: 0.5;
+}

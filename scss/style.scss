@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+/* Main colors */
+$dark-green: #40575C;
+$light-green: #779990;
+$dark-orange: #D68B60;
+$light-orange: #FBBB7F;
+
+/* Fonts */
+$main-font: 'Noto Sans JP', sans-serif;
+
+/* Font Sizes */
+$baseFontSize: 1rem;
+$baseNavSize: 0.64rem;
+$smallFontSize: 0.8rem;
+$smallestFontSize: 0.512rem;
+
+$extra-big-heading: 3.052rem;
+$extra-heading: 2.441rem;
+$heading-1: 1.953rem;
+$heading-2: 1.563rem;
+$heading-3: 1.25rem;
+$heading-4: $baseFontSize;
+$heading-5: $smallFontSize;
+$heading-6: 0.64rem;
+$heading-7: $smallestFontSize;
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: $main-font;
+}
+
+/* HEADER STYLES */
+
+.top-header {
+    height: auto;
+    background-color: $dark-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0rem 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .top-header {
+        flex-direction: row;
+    }
+}
+
+.top-header .top-tag {
+    text-transform: uppercase;
+    font-size: $smallFontSize;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: lighten($light-green, 20%);
+}
+
+.top-header .company-name {
+    text-transform: capitalize;
+    font-size: $heading-4;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: lighten($light-green, 20%);
+}
+
+/* FOOTER STYLES */
+
+.footer-bottom {
+    background-color: $dark-green;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom p {
+    font-size: $smallFontSize;
+    font-family: $main-font;
+    color: lighten($light-green, 20%);
+}
+
+.social-media-links {
+    padding: 1rem;
+}
+
+.social-media-links a {
+    font-size: 1.3rem;
+    padding: 1rem .5rem;
+    color: lighten($light-green, 20%);
+}
+
+.social-media-links a:hover {
+    opacity: 0.5;
+}
