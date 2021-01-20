@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,300&display=swap');
 
 /* Main colors */
 $dark-green: #40575C;
@@ -7,7 +7,7 @@ $dark-orange: #D68B60;
 $light-orange: #FBBB7F;
 
 /* Fonts */
-$main-font: 'Noto Sans JP', sans-serif;
+$main-font: 'Lato', sans-serif;
 
 /* Font Sizes */
 $baseFontSize: 1rem;
@@ -25,17 +25,21 @@ $heading-5: $smallFontSize;
 $heading-6: 0.64rem;
 $heading-7: $smallestFontSize;
 
+/* GENERIC STYLES */
+
 
 body {
     margin: 0;
     padding: 0;
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6, ul, li {
     font-family: $main-font;
 }
 
 /* HEADER STYLES */
+
+/* HEADER STYLES --- TOP HEADER */
 
 .top-header {
     height: auto;
@@ -70,6 +74,43 @@ p {
     color: lighten($light-green, 20%);
 }
 
+/* HEADER STYLES --- TOP HEADER */
+
+.main-header {
+    background-color: $light-green;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header-wrapper h1, .main-header-wrapper h2 {
+    color: lighten($light-green, 45%);
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main-header-wrapper h2 {
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 600px) {
+    .main-header {
+        min-height: 50vh;
+    }
+    .main-header-wrapper h1, .main-header-wrapper h2 {
+        font-size: $extra-big-heading;
+    }
+}
+
 /* FOOTER STYLES */
 
 .footer-bottom {
@@ -85,6 +126,7 @@ p {
     font-size: $smallFontSize;
     font-family: $main-font;
     color: lighten($light-green, 20%);
+    font-weight: 100;
 }
 
 .social-media-links {
