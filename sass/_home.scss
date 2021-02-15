@@ -1,0 +1,268 @@
+// Container 
+.container {
+    width: 100%;
+    background-image: url(../images/woods1.jpg),
+    linear-gradient(to right bottom, rgba($color-primary-dark, 1), rgba($color-primary, 1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+    background-attachment: fixed;
+}
+
+// Header
+.header {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__content-wrapper {
+        text-align: center;
+        color: $color-white;
+        text-shadow: 0 1rem 2rem rgba($color-black, .2);
+        margin-top: 30rem;
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        font-size: 6rem;
+        letter-spacing: 2px;
+        color: rgba($color-white, .9);
+
+        &--italic {
+            font-style: italic;
+        }
+    }
+
+    &__tagline {
+        font-family: $font-primary;
+        font-weight: 200;
+        font-size: 4rem;
+    }
+}
+
+// CTA section
+
+.cta {
+    width: 100%;
+    padding: 15rem 0;
+    background-color: $color-white;
+
+    &__wrapper {
+        max-width: $max-width;
+        background-color: #FFF;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 0rem 5rem 0rem;
+        box-shadow: $shadow;
+        border-radius: .5rem;
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        color: $color-secondary-dark;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        text-align: center;
+        text-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        margin-bottom: 3rem;
+    }
+
+    &__video {
+        margin: 0 auto;
+        border-radius: .5rem;
+        margin-bottom: 5rem;
+    }
+
+    &__list {
+        width: 80%;
+    }
+
+    &__item {
+        padding: 1.5rem;
+        border-bottom: 1px solid $color-grey-light;
+
+        &:first-child {
+            border-top: 1px solid $color-grey-light;
+        }
+    }
+}
+
+//Form
+
+.form {
+    padding: 15rem 0;
+    background-image: url(../images/woods1.jpg),
+    linear-gradient(to right bottom, rgba($color-primary-dark, 1), rgba($color-primary, 1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+    background-attachment: fixed;
+
+    &__wrapper {
+        max-width: 50rem;
+        margin: 0 auto;
+        background-color: rgba($color-white, .9);
+        padding: 3rem;
+        border-radius: .5rem;
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 6rem;
+        letter-spacing: 2px;
+        color: rgba($color-white, .9);
+        margin-bottom: 5rem;
+        text-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+
+    &__input {
+        font-family: inherit;
+        font-size: 1.5rem;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary-dark;
+        }
+    }
+
+    & input[type="submit"] {
+        margin: 3rem auto;
+        display: block;
+    }
+
+    & p {
+        font-size: 1.1rem;
+    }
+
+    & a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: $color-secondary-dark;
+
+        &:hover {
+            color: $color-grey-dark;
+        }
+    }
+}
+
+//Videoserie
+.videoserie {
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+    
+    &__wrapper {
+        padding: 5rem 2rem;
+        max-width: $max-width;
+        width: 100%;
+        border-radius: .5rem;
+        box-shadow: $shadow;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+        width: 80%;
+    }
+
+    &__item {
+        padding: 1.5rem;
+        border-bottom: 1px solid $color-grey-light;
+
+        &:first-child {
+            border-top: 1px solid $color-grey-light;
+        }
+    }
+
+    &__text {
+        padding: 3rem 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+// Markus 
+
+.markus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+
+    &__wrapper {
+        background-color: rgba(#FFF, .9);
+        max-width: $max-width;
+        display: flex;
+        border-radius: .5rem;
+        overflow: hidden;
+        box-shadow: $shadow;
+    }
+
+    &__text-content {
+        padding: 8rem 5rem;
+    }
+
+    &__photo {
+        background-image: url(../images/image2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+
+    &__list {
+        width: 100%;
+        font-weight: 300;
+        padding: 0 3rem;
+    }
+
+    &__item {
+        padding: 1.5rem;
+        border-bottom: 1px solid $color-grey;
+
+        &:first-child {
+            border-top: 1px solid $color-grey;
+        }
+    }
+}
+
+// Footer
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 3rem;
+    background-color: rgba($color-primary-dark, .5);
+
+    &__copyright {
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}

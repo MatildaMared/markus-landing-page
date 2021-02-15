@@ -1,0 +1,70 @@
+// Import fonts Oswald & Lato
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Oswald', sans-serif;
+
+// Variables
+$color-primary-dark: #40575C;
+$color-primary: #779990;
+$color-secondary-light: #FAECAB;
+$color-secondary: #FBBB7F;
+$color-secondary-dark: #D68B60;
+
+$color-black: #000;
+$color-white: #EEE;
+$color-grey: #DDD;
+$color-grey-dark: #333;
+$color-grey-light: rgb(240, 240, 240);
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Oswald', sans-serif;
+
+$shadow: 0 1rem 2rem rgba($color-black, .1);
+
+$max-width: 120rem;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;  //1rem = 10px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $font-primary;
+    background-color: $color-white;
+    color: $color-grey-dark;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+//Heading
+.heading-secondary {
+    font-family: $font-primary;
+    color: $color-secondary-dark;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading-tertiary {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+// Paragraph {
+.paragraph {
+    margin-bottom: 1rem;
+}
