@@ -78,15 +78,20 @@
     }
 
     &__list {
-        width: 80%;
+        background-color: lighten($color-secondary-dark, 37);
+        margin-bottom: 5rem;
+        max-width: 80rem;
+        padding: 0 5rem;
+        border: 3px solid $color-secondary;
+        font-size: 1.8rem;
+        box-shadow: 0 1rem 2rem rgba($color-secondary-dark, .1);
     }
 
     &__item {
-        padding: 1.5rem;
-        border-bottom: 1px solid $color-grey-light;
+        padding: 2rem;
 
-        &:first-child {
-            border-top: 1px solid $color-grey-light;
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-grey;
         }
     }
 }
@@ -94,7 +99,7 @@
 //Form
 
 .form {
-    padding: 15rem 0;
+    padding: 25rem 0;
     background-image: url(../images/woods1.jpg),
     linear-gradient(to right bottom, rgba($color-primary-dark, 1), rgba($color-primary, 1));
     background-size: cover;
@@ -107,6 +112,7 @@
         background-color: rgba($color-white, .9);
         padding: 3rem;
         border-radius: .5rem;
+        box-shadow: $shadow;
     }
 
     &__heading {
@@ -129,7 +135,7 @@
         background-color: rgba($color-white, .5);
         border: none;
         border-bottom: 3px solid transparent;
-        width: 90%;
+        width: 100%;
         display: block;
         transition: all .3s;
 

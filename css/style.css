@@ -187,20 +187,26 @@ body {
 }
 
 .cta__list {
-  width: 80%;
+  background-color: #fdf8f6;
+  margin-bottom: 5rem;
+  max-width: 80rem;
+  padding: 0 5rem;
+  border: 3px solid #FBBB7F;
+  font-size: 1.8rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(214, 139, 96, 0.1);
+          box-shadow: 0 1rem 2rem rgba(214, 139, 96, 0.1);
 }
 
 .cta__item {
-  padding: 1.5rem;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 2rem;
 }
 
-.cta__item:first-child {
-  border-top: 1px solid #f0f0f0;
+.cta__item:not(:last-child) {
+  border-bottom: 1px solid #DDD;
 }
 
 .form {
-  padding: 15rem 0;
+  padding: 25rem 0;
   background-image: url(../images/woods1.jpg), -webkit-gradient(linear, left top, right bottom, from(#40575c), to(#779990));
   background-image: url(../images/woods1.jpg), linear-gradient(to right bottom, #40575c, #779990);
   background-size: cover;
@@ -214,6 +220,8 @@ body {
   background-color: rgba(238, 238, 238, 0.9);
   padding: 3rem;
   border-radius: .5rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .form__heading {
@@ -236,7 +244,7 @@ body {
   background-color: rgba(238, 238, 238, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
+  width: 100%;
   display: block;
   -webkit-transition: all .3s;
   transition: all .3s;
