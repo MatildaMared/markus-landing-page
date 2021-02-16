@@ -14,12 +14,25 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    @media screen and (max-width: 1000px) {
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 650px) {
+        height: 45vh;
+    }
+
+    @media screen and (max-width: 460px) {
+        height: 40vh;
+    }
 
     &__content-wrapper {
         text-align: center;
         color: $color-white;
         text-shadow: 0 1rem 2rem rgba($color-black, .2);
-        margin-top: 30rem;
     }
 
     &__heading {
@@ -28,6 +41,18 @@
         font-size: 6rem;
         letter-spacing: 2px;
         color: rgba($color-white, .9);
+
+        @media screen and (max-width: 850px) {
+            font-size: 5rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            font-size: 4rem;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 3rem;
+        }
 
         &--italic {
             font-style: italic;
@@ -38,6 +63,18 @@
         font-family: $font-primary;
         font-weight: 200;
         font-size: 4rem;
+
+        @media screen and (max-width: 850px) {
+            font-size: 3.5rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            font-size: 3rem;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -48,6 +85,10 @@
     padding: 15rem 0;
     background-color: $color-white;
 
+    @media screen and (max-width: 1200px) {
+        padding: 0;
+    }
+
     &__wrapper {
         max-width: $max-width;
         background-color: #FFF;
@@ -56,9 +97,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10rem 0rem 5rem 0rem;
+        padding: 10rem 2rem 5rem 2rem;
         box-shadow: $shadow;
         border-radius: .5rem;
+
+        @media screen and (max-width: 1200px) {
+            padding: 10rem 2rem 15rem 2rem;
+        }
+
+        @media screen and (max-width: 1000px) {
+            padding: 5rem 2rem 10rem 2rem;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 4rem 2rem 6rem 2rem;
+        }
     }
 
     &__heading {
@@ -75,6 +128,16 @@
         margin: 0 auto;
         border-radius: .5rem;
         margin-bottom: 5rem;
+        width: 100%;
+        min-height: 60rem;
+
+        @media screen and (max-width: 800px) {
+            min-height: 30rem;
+        }
+
+        @media screen and (max-width: 350px) {
+            min-height: 20rem;
+        }
     }
 
     &__list {
@@ -94,6 +157,43 @@
             border-bottom: 1px solid $color-grey;
         }
     }
+
+    &__videoserie-video {
+        width: 40rem;
+        height: 25rem;
+        background-size: cover;
+        margin: 3rem 0;
+
+        &-heading {
+            padding: 1rem;
+            color: lighten($color-secondary, 10);
+            letter-spacing: 1px;
+            font-family: $font-secondary;
+            font-size: 3.5rem;
+            text-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        }
+
+        &-description {
+            display: block;
+            margin-top: 10rem;
+            background-color: rgba($color-white, .7);
+            font-size: 2rem;
+            text-align: center;
+            padding: .5rem;
+        }
+    }
+
+    .video-1 {
+        background-image: url(../images/video1.png);
+    }
+
+    .video-2 {
+        background-image: url(../images/video2.png);
+    }
+
+    .video-3 {
+        background-image: url(../images/video3.png);
+    }
 }
 
 //Form
@@ -106,6 +206,14 @@
     background-blend-mode:soft-light;
     background-attachment: fixed;
 
+    @media screen and (max-width: 1000px) {
+        padding: 15rem 0rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 10rem 0rem;
+    }
+
     &__wrapper {
         max-width: 50rem;
         margin: 0 auto;
@@ -113,6 +221,10 @@
         padding: 3rem;
         border-radius: .5rem;
         box-shadow: $shadow;
+
+        @media screen and (max-width: 415px) {
+            border-radius: 0;
+        }
     }
 
     &__heading {
@@ -124,6 +236,14 @@
         color: rgba($color-white, .9);
         margin-bottom: 5rem;
         text-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+        @media screen and (max-width: 800px) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 3.3rem;
+        }
     }
 
     &__input {
@@ -177,6 +297,10 @@
     justify-content: center;
     align-items: center;
     padding: 15rem 0;
+
+    @media screen and (max-width: 900px) {
+        padding: 0;
+    }
     
     &__wrapper {
         padding: 5rem 2rem;
@@ -189,6 +313,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 900px) {
+            padding: 10rem 2rem;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 6rem 2rem;
+        }
     }
 
     &__list {
@@ -221,6 +353,10 @@
     align-items: center;
     padding: 15rem 0;
 
+    @media screen and (max-width: 800px) {
+        padding: 0;
+    }
+
     &__wrapper {
         background-color: rgba(#FFF, .9);
         max-width: $max-width;
@@ -228,10 +364,19 @@
         border-radius: .5rem;
         overflow: hidden;
         box-shadow: $shadow;
+
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            border-radius: 0;
+        }
     }
 
     &__text-content {
         padding: 8rem 5rem;
+
+        @media screen and (max-width: 1000px) {
+            padding: 5rem 2rem;
+        }
     }
 
     &__photo {
@@ -239,6 +384,21 @@
         background-size: cover;
         background-position: center;
         width: 100%;
+
+        @media screen and (max-width: 1000px) {
+            height: 60vh;
+            order: -1;
+        }
+
+        @media screen and (max-width: 800px) {
+            height: 50vh;
+            order: -1;
+        }
+
+        @media screen and (max-width: 800px) {
+            height: 40vh;
+            order: -1;
+        }
     }
 
     &__list {
@@ -270,5 +430,9 @@
         font-weight: 300;
         letter-spacing: 1px;
         text-transform: uppercase;
+
+        @media screen and (max-width: 600px) {
+            font-size: 1.2rem;
+        }
     }
 }
