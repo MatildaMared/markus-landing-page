@@ -273,6 +273,7 @@
     & input[type="submit"] {
         margin: 3rem auto;
         display: block;
+        -webkit-appearance: none;
     }
 
     & p {
